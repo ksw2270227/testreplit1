@@ -53,9 +53,6 @@
     input[type="submit"]:hover {
       background-color: #2980b9;
     }
-
-
-
   </style>
 </head>
 
@@ -69,7 +66,7 @@
       <li><a href="login.html">ログイン</a></li>
     </ul>
   </nav>
-  
+
   <form action="/top" method="post">
     <h2>イベント参加</h2>
     <label for="name">イベントID:</label>
@@ -90,7 +87,7 @@
         document.querySelector("#header").innerHTML = data;
 
         // ヘッダーを読み込んだ後にハンバーガーボタンにイベントを設定する
-        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('.hamburger-menu').addEventListener('click', function () {
           document.querySelector('.menu').classList.toggle('active');
         });
       });

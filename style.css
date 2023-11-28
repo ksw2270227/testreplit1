@@ -90,14 +90,13 @@ main {
 }
 
 /* ハンバーガーメニュー */
-/* 追加のCSS */
 .hamburger-menu {
   display: flex;
   flex-direction: column;
   cursor: pointer;
   position: absolute;
-  top: 20px; /* 適切な位置を指定 */
-  right: 20px; /* 適切な位置を指定 */
+  top: 20px;
+  right: 20px;
 }
 
 .bar {
@@ -108,16 +107,45 @@ main {
   transition: 0.4s;
 }
 
-
 /* メニューの初期状態 */
 .menu {
   display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 15px;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+  color: #3498db;
 }
 
 /* メニューを表示するスタイル */
 .menu.active {
   display: block;
+  flex-direction: column;
+  /* メニューを縦に並べる */
 }
+
 
 footer {
   background-color: #333333;
