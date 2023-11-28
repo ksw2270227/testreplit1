@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>サイトのタイトル</title>
+  <meta name="description" content="サイトの説明文">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="ロストトラッカー">
+    </div>
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">新規登録</a></li>
+        <li><a href="#">ログイン</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>ロストトラッカー</h1>
+      <p>サイトの特徴や価値提案を伝える文章が入ります。</p>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h2>グループ</h2>
+        <p>旅行はこちら</p>
+        <a href="#" class="cta-button">作成</a>
+        <a href="#" class="cta-button">参加</a>
+      </div>
+      <div class="feature">
+        <h2>イベント</h2>
+        <p>ツアー旅行やスキーはこちら</p>
+        <a href="#" class="cta-button">参加</a>
+      </div>
+      <!-- 他の機能やコンテンツブロックを追加 -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 groupF</p>
+  </footer>
+
+  <!-- JavaScriptを追加 -->
+  <script>
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+      document.querySelector('.menu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
